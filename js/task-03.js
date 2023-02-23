@@ -15,11 +15,21 @@ const images = [
 
 /*Solution*/
 
-const imagesEl = images
-	.map(image => {
-		return `<img src=${image.url} alt="${image.alt}" class="gallery-image"/>`;
-	})
-	.join("");
+// const imagesEl = images
+// 	.map(image => {
+// 		return `<img src=${image.url} alt="${image.alt}" class="gallery-image"/>`;
+// 	})
+// 	.join("");
+
+const makeGalleryImageEl = imagesEl => {
+	return imagesEl
+		.map(image => {
+			return `<img src=${image.url} alt="${image.alt}" class="gallery-image"/>`;
+		})
+		.join("");
+};
+
+const imagesEl = makeGalleryImageEl(images);
 
 const galleryEl = document.querySelector(".gallery");
 

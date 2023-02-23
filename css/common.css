@@ -13,6 +13,18 @@ body {
   line-height: 1.5;
 }
 
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-image {
+  width: 400px;
+  padding: 10px;
+  border: 5px ridge rgb(0, 207, 214);
+  border-radius: 5px;
+}
+
 input {
   padding: 8px;
   font: inherit;

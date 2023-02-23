@@ -1,5 +1,7 @@
 const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments"];
 
+/*Solution*/
+
 const makeIngredientsItems = ingredientsList => {
 	return ingredientsList.map(ingredient => {
 		const ingredientItem = document.createElement("li");

@@ -11,7 +11,6 @@ Elements: ${animalsListEl.length}`);
 
 /*Products list*/
 const productsTitleEl = document.querySelector("#categories").firstElementChild.nextElementSibling.querySelector("h2");
-console.log(productsTitleEl.textContent);
 
 const productsListEl = document
 	.querySelector("#categories")

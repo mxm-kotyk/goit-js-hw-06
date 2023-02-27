@@ -1,13 +1,10 @@
 const inputEl = document.querySelector("#validation-input");
 
 const hadleInputOnBlur = event => {
-	if (inputEl.value.length === Number(inputEl.dataset.length)) {
-		inputEl.classList.add("valid");
-		inputEl.classList.remove("invalid");
-	} else {
-		inputEl.classList.add("invalid");
-		inputEl.classList.remove("valid");
-	}
+	const inputData = event.target.value.length;
+	const validationCheck = Number(event.target.dataset.length);
+	event.target.classList.toggle("valid", inputData === validationCheck);
+	event.target.classList.toggle("invalid", inputData !== validationCheck);
 };
 
 inputEl.addEventListener("blur", hadleInputOnBlur);

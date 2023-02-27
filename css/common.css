@@ -13,6 +13,20 @@ body {
   line-height: 1.5;
 }
 
+input {
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* ======================================= */
+
+/* Task 3 styles */
+
 .gallery {
   display: flex;
   gap: 10px;
@@ -25,12 +39,4 @@ body {
   border-radius: 5px;
 }
 
-input {
-  padding: 8px;
-  font: inherit;
-}
-
-button {
-  padding: 8px 12px;
-  cursor: pointer;
-}
+/* ======================================= */
